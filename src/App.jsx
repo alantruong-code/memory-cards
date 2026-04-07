@@ -1,3 +1,4 @@
+import Card from "./components/Card.jsx";
 import './index.css'
 
 export default function App() {
@@ -15,28 +16,28 @@ export default function App() {
       <main>
         <secion className="card-grid">
           <div className="grid-row">
-            <div className="card">?</div>
-            <div className="card">?</div>
-            <div className="card">?</div>
-            <div className="card">?</div>
+            <Card />
+            <Card />
+            <Card />
+            <Card />
           </div>
           <div className="grid-row">
-            <div className="card">?</div>
-            <div className="card">?</div>
-            <div className="card">?</div>
-            <div className="card">?</div>
+            <Card />
+            <Card />
+            <Card />
+            <Card />
           </div>
           <div className="grid-row">
-            <div className="card">?</div>
-            <div className="card">?</div>
-            <div className="card">?</div>
-            <div className="card">?</div>
+            <Card />
+            <Card />
+            <Card />
+            <Card />
           </div>
           <div className="grid-row">
-            <div className="card">?</div>
-            <div className="card">?</div>
-            <div className="card">?</div>
-            <div className="card">?</div>
+            <Card />
+            <Card />
+            <Card />
+            <Card />
           </div>
         </secion>
       </main>

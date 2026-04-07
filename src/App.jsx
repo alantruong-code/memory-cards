@@ -2,7 +2,6 @@ import Card from "./components/Card.jsx";
 import './index.css'
 
 export default function App() {
-
   return (
     <div className="app">
       <header>

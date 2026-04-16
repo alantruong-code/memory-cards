@@ -1,14 +1,29 @@
-import { useState } from "react";
+export default function Card(props) { 
+  // determine which class to apply based on flip state
+  let cardClass;
+  if (props.isFaceUp) {
+    cardClass = 'card flipped'
+  } else {
+    cardClass = 'card'
+  }
 
-export default function Card() {
-  const [isFaceUp, setIsFaceUp] = useState(false);
+  // show value if faced up, otherwise show question mark
+  let cardContent;
+  if (props.isFaceUp) {
+    cardContent = props.value 
+  } else {
+    cardContent = '?'
+  }
 
+  // pass card id back up to parent when clicked
   function handleClick() {
-    setIsFaceUp(!isFaceUp);
-    console.log(`Card isFaceUp: ${isFaceUp}`);
+   props.onClick(props.id)
   }
 
   return (
-    <div className="card" onClick={handleClick}>?</div>
+    <div className={cardClass} onClick={handleClick}>
+      {/* display card content */} 
+      {cardContent}
+    </div>
   )
 }
